@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+  
+body {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  background: #f0f0f0;
+  line-height: 1.6;
+}
+  
+header, footer {
+  background: rgba(48, 48, 133, 0.95);
+  text-align: center;
+  padding: 20px;
+  z-index: 1000;
+}
+  
+header {
+  position: sticky;
+  top: 0;
+}
+
+h1 {  color: #fff;  font-size: 2rem;  margin-bottom: 10px;}
+header h4, footer h4 {  color: #75ce27;  font-size: 1.2rem;  transition: color 0.3s ease, transform 0.3s ease;}
+  
+footer h4 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+  
+footer h4:hover {
+  color: #fff;
+  transform: scale(1.03);
+}
+  
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto 150px;
+}
+  
+.caja {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border: 2px solid transparent;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  justify-content: space-between;
+  height: 500px;
+}
+  
+.marca {
+  background: #ffd700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px 10px 0 0;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+}
+  
+.caja:hover {
+  border-color: greenyellow;
+}
+
+.caja:hover .marca {
+  transform: translateY(-5px);
+  font-size: 2.5rem;
+}
+
+.caja h2, .caja p {
+  margin: 20px;
+}
+  
+.caja h2 {
+  font-size: 1.3rem;
+  color: #333;
+  border-bottom: 2px solid #75ce27;
+  padding-bottom: 5px;
+  }
+
+.caja p {
+  font-size: 1rem;
+  color: #666;
+  text-align: justify;
+}
+  
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+  
+footer a {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background: rgb(25, 25, 83);
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+  
+footer a:hover {
+  background: linear-gradient(135deg, rgb(46, 169, 67), #25f105);
+  color: rgb(48, 48, 133);
+  transform: translateY(-3px) scale(1.1) rotate(10deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer h3 {
+  color: #fff;
+  margin: 10px 0 5px;
+  font-size: 1.1rem;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
